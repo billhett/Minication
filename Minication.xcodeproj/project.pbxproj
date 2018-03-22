@@ -13,7 +13,56 @@
 		A95CF004205FFB39007AA797 /* Minication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A95CF002205FFB39007AA797 /* Minication.xcdatamodeld */; };
 		A95CF006205FFB39007AA797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95CF005205FFB39007AA797 /* Assets.xcassets */; };
 		A95CF009205FFB39007AA797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95CF007205FFB39007AA797 /* LaunchScreen.storyboard */; };
+		A95CF016205FFBCA007AA797 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95CF014205FFBCA007AA797 /* Interface.storyboard */; };
+		A95CF018205FFBCA007AA797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95CF017205FFBCA007AA797 /* Assets.xcassets */; };
+		A95CF01F205FFBCB007AA797 /* Minication watch app Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A95CF01E205FFBCB007AA797 /* Minication watch app Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A95CF024205FFBCB007AA797 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CF023205FFBCB007AA797 /* InterfaceController.swift */; };
+		A95CF026205FFBCB007AA797 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CF025205FFBCB007AA797 /* ExtensionDelegate.swift */; };
+		A95CF028205FFBCB007AA797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95CF027205FFBCB007AA797 /* Assets.xcassets */; };
+		A95CF02C205FFBCB007AA797 /* Minication watch app.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A95CF012205FFBCA007AA797 /* Minication watch app.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A95CF020205FFBCB007AA797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A95CEFF0205FFB39007AA797 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A95CF01D205FFBCB007AA797;
+			remoteInfo = "Minication watch app Extension";
+		};
+		A95CF02A205FFBCB007AA797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A95CEFF0205FFB39007AA797 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A95CF011205FFBCA007AA797;
+			remoteInfo = "Minication watch app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A95CF030205FFBCB007AA797 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A95CF01F205FFBCB007AA797 /* Minication watch app Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95CF034205FFBCB007AA797 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A95CF02C205FFBCB007AA797 /* Minication watch app.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A95CEFF8205FFB39007AA797 /* Minication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +73,26 @@
 		A95CF005205FFB39007AA797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A95CF008205FFB39007AA797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A95CF00A205FFB39007AA797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A95CF012205FFBCA007AA797 /* Minication watch app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minication watch app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95CF015205FFBCA007AA797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A95CF017205FFBCA007AA797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A95CF019205FFBCA007AA797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A95CF01E205FFBCB007AA797 /* Minication watch app Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Minication watch app Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95CF023205FFBCB007AA797 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A95CF025205FFBCB007AA797 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A95CF027205FFBCB007AA797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A95CF029205FFBCB007AA797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A95CEFF5205FFB39007AA797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95CF01B205FFBCB007AA797 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				A95CEFFA205FFB39007AA797 /* Minication */,
+				A95CF013205FFBCA007AA797 /* Minication watch app */,
+				A95CF022205FFBCB007AA797 /* Minication watch app Extension */,
 				A95CEFF9205FFB39007AA797 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				A95CEFF8205FFB39007AA797 /* Minication.app */,
+				A95CF012205FFBCA007AA797 /* Minication watch app.app */,
+				A95CF01E205FFBCB007AA797 /* Minication watch app Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +136,27 @@
 			path = Minication;
 			sourceTree = "<group>";
 		};
+		A95CF013205FFBCA007AA797 /* Minication watch app */ = {
+			isa = PBXGroup;
+			children = (
+				A95CF014205FFBCA007AA797 /* Interface.storyboard */,
+				A95CF017205FFBCA007AA797 /* Assets.xcassets */,
+				A95CF019205FFBCA007AA797 /* Info.plist */,
+			);
+			path = "Minication watch app";
+			sourceTree = "<group>";
+		};
+		A95CF022205FFBCB007AA797 /* Minication watch app Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A95CF023205FFBCB007AA797 /* InterfaceController.swift */,
+				A95CF025205FFBCB007AA797 /* ExtensionDelegate.swift */,
+				A95CF027205FFBCB007AA797 /* Assets.xcassets */,
+				A95CF029205FFBCB007AA797 /* Info.plist */,
+			);
+			path = "Minication watch app Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +167,51 @@
 				A95CEFF4205FFB39007AA797 /* Sources */,
 				A95CEFF5205FFB39007AA797 /* Frameworks */,
 				A95CEFF6205FFB39007AA797 /* Resources */,
+				A95CF034205FFBCB007AA797 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A95CF02B205FFBCB007AA797 /* PBXTargetDependency */,
 			);
 			name = Minication;
 			productName = Minication;
 			productReference = A95CEFF8205FFB39007AA797 /* Minication.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A95CF011205FFBCA007AA797 /* Minication watch app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A95CF031205FFBCB007AA797 /* Build configuration list for PBXNativeTarget "Minication watch app" */;
+			buildPhases = (
+				A95CF010205FFBCA007AA797 /* Resources */,
+				A95CF030205FFBCB007AA797 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A95CF021205FFBCB007AA797 /* PBXTargetDependency */,
+			);
+			name = "Minication watch app";
+			productName = "Minication watch app";
+			productReference = A95CF012205FFBCA007AA797 /* Minication watch app.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A95CF01D205FFBCB007AA797 /* Minication watch app Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A95CF02D205FFBCB007AA797 /* Build configuration list for PBXNativeTarget "Minication watch app Extension" */;
+			buildPhases = (
+				A95CF01A205FFBCB007AA797 /* Sources */,
+				A95CF01B205FFBCB007AA797 /* Frameworks */,
+				A95CF01C205FFBCB007AA797 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Minication watch app Extension";
+			productName = "Minication watch app Extension";
+			productReference = A95CF01E205FFBCB007AA797 /* Minication watch app Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +224,14 @@
 				ORGANIZATIONNAME = "William Hettinger";
 				TargetAttributes = {
 					A95CEFF7205FFB39007AA797 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A95CF011205FFBCA007AA797 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A95CF01D205FFBCB007AA797 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -117,6 +251,8 @@
 			projectRoot = "";
 			targets = (
 				A95CEFF7205FFB39007AA797 /* Minication */,
+				A95CF011205FFBCA007AA797 /* Minication watch app */,
+				A95CF01D205FFBCB007AA797 /* Minication watch app Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +265,23 @@
 				A95CF009205FFB39007AA797 /* LaunchScreen.storyboard in Resources */,
 				A95CF006205FFB39007AA797 /* Assets.xcassets in Resources */,
 				A95CF001205FFB39007AA797 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95CF010205FFBCA007AA797 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95CF018205FFBCA007AA797 /* Assets.xcassets in Resources */,
+				A95CF016205FFBCA007AA797 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95CF01C205FFBCB007AA797 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95CF028205FFBCB007AA797 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +298,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A95CF01A205FFBCB007AA797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95CF026205FFBCB007AA797 /* ExtensionDelegate.swift in Sources */,
+				A95CF024205FFBCB007AA797 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A95CF021205FFBCB007AA797 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A95CF01D205FFBCB007AA797 /* Minication watch app Extension */;
+			targetProxy = A95CF020205FFBCB007AA797 /* PBXContainerItemProxy */;
+		};
+		A95CF02B205FFBCB007AA797 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A95CF011205FFBCA007AA797 /* Minication watch app */;
+			targetProxy = A95CF02A205FFBCB007AA797 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A95CEFFF205FFB39007AA797 /* Main.storyboard */ = {
@@ -162,6 +337,14 @@
 				A95CF008205FFB39007AA797 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A95CF014205FFBCA007AA797 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A95CF015205FFBCA007AA797 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -304,6 +487,80 @@
 			};
 			name = Release;
 		};
+		A95CF02E205FFBCB007AA797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				INFOPLIST_FILE = "Minication watch app Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.Minication.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		A95CF02F205FFBCB007AA797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				INFOPLIST_FILE = "Minication watch app Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.Minication.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		A95CF032205FFBCB007AA797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				IBSC_MODULE = Minication_watch_app_Extension;
+				INFOPLIST_FILE = "Minication watch app/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.Minication.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		A95CF033205FFBCB007AA797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				IBSC_MODULE = Minication_watch_app_Extension;
+				INFOPLIST_FILE = "Minication watch app/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.Minication.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -321,6 +578,24 @@
 			buildConfigurations = (
 				A95CF00E205FFB39007AA797 /* Debug */,
 				A95CF00F205FFB39007AA797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A95CF02D205FFBCB007AA797 /* Build configuration list for PBXNativeTarget "Minication watch app Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95CF02E205FFBCB007AA797 /* Debug */,
+				A95CF02F205FFBCB007AA797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A95CF031205FFBCB007AA797 /* Build configuration list for PBXNativeTarget "Minication watch app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95CF032205FFBCB007AA797 /* Debug */,
+				A95CF033205FFBCB007AA797 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
